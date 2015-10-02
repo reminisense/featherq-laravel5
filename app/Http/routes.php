@@ -11,11 +11,52 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'UserController@getUserDashboard');
 
-Route::get('home', 'HomeController@index');
+Route::post('/', 'UserController@processContactForm');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::get('rest/register-user/{fb_id}/{first_name}/{last_name}/{email}/{gender}/{phone}/{country}', 'RestController@getRegisterUser');
+
+Route::controller('fb', 'FBController');
+
+Route::controller('processqueue', 'ProcessQueueController');
+
+Route::controller('user', 'UserController');
+
+Route::controller('rating', 'RatingController');
+
+Route::controller('newsletter', 'NewsletterController');
+
+Route::controller('broadcast', 'BroadcastController');
+
+Route::controller('processqueue', 'ProcessQueueController');
+
+Route::controller('issuenumber', 'IssueNumberController');
+
+Route::controller('queuesettings', 'QueueSettingsController');
+
+Route::controller('business', 'BusinessController');
+
+Route::controller('terminal', 'TerminalController');
+
+Route::controller('advertisement', 'AdvertisementController');
+
+Route::controller('watchdog', 'WatchdogController');
+
+Route::controller('rest', 'RestController'); /* RDH For Android Webservices*/
+
+Route::controller('message', 'MessageController');
+
+Route::controller('forms', 'FormsController');
+
+Route::controller('admin', 'AdminController');
+
+Route::get('about', 'ContentController@getMain');
+
+Route::get('guides', 'ContentController@getGuides');
+
+Route::controller('articles', 'ContentController');
+
+Route::controller('how-to', 'ContentController');
+
+Route::controller('test', 'TestController');
