@@ -5,7 +5,7 @@
  * Date: 4/28/15
  * Time: 2:26 PM
  */
-
+namespace App\Http\Controllers;
 class WatchdogController extends BaseController{
 
   public function postLogSearch() {

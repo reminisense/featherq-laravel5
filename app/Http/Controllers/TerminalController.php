@@ -5,7 +5,7 @@
  * Date: 2/3/15
  * Time: 6:53 PM
  */
-
+namespace App\Http\Controllers;
 class TerminalController extends BaseController{
 
     public function postAssign(){

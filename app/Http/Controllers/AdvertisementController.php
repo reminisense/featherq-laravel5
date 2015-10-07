@@ -1,4 +1,5 @@
 <?php
+namespace App\Http\Controllers;
 /**
  *
  * Should contain functions related to the broadcast page
@@ -9,7 +10,7 @@
  * Time: 5:11 PM
  */
 
-class AdvertisementController extends BaseController{
+class AdvertisementController extends BaseController {
 
   public function postSliderImages() {
     if (Helper::isBusinessOwner(Input::get('business_id'), Helper::userId())) { // PAG added permission checking

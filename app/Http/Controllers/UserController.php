@@ -5,6 +5,11 @@
  * Date: 1/22/15
  * Time: 5:12 PM
  */
+namespace App\Http\Controllers;
+
+use Auth;
+use View;
+use App\Models\Helper;
 
 class UserController extends BaseController{
 
@@ -91,7 +96,7 @@ class UserController extends BaseController{
      * @description: render dashboard, fetch all businesses for default search view, and businesses created by logged in user
      */
     public function getUserDashboard(){
-        $response = Helper::VerifyFB(Session::get('FBaccessToken'));
+        //$response = Helper::VerifyFB(Session::get('FBaccessToken'));
         //$active_businesses = Business::getDashboardBusinesses();
         if (Auth::check())
         {

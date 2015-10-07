@@ -8,7 +8,7 @@
  * Date: 1/22/15
  * Time: 5:11 PM
  */
-
+namespace App\Http\Controllers;
 class BroadcastController extends BaseController{
 
     /*public function getBranch($branch_id = 0)

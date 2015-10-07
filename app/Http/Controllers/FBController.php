@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Http\Controllers;
 /**
  * Created by IntelliJ IDEA.
  * User: polljii
@@ -7,7 +7,7 @@
  * Time: 10:11 AM
  */
 
-class FBController extends BaseController {
+class FBController extends Controller {
 
     public function postSaveDetails()
     {

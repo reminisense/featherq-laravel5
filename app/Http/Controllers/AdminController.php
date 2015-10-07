@@ -1,4 +1,5 @@
 <?php
+namespace App\Http\Controllers;
 /**
  * Created by PhpStorm.
  * User: USER

@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Http\Controllers;
 class FormsController extends BaseController{
 
   public function postAddTextfield() {

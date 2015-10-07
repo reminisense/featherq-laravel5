@@ -5,7 +5,7 @@
  * Date: 6/10/2015
  * Time: 2:41 PM
  */
-
+namespace App\Http\Controllers;
 
 class NewsletterController extends BaseController {
 

@@ -5,7 +5,7 @@
  * Date: 1/22/15
  * Time: 2:34 PM
  */
-
+namespace App\Http\Controllers;
 class ProcessQueueController extends BaseController{
 
 

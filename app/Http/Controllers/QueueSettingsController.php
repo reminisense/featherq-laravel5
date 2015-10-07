@@ -5,6 +5,7 @@
  * Date: 1/28/15
  * Time: 6:55 PM
  */
+namespace App\Http\Controllers;
 class QueueSettingsController extends BaseController{
     public function getUpdate($business_id, $field, $value){
         $first_branch = Branch::where('business_id', '=', $business_id)->first();

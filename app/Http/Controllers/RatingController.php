@@ -5,7 +5,7 @@
  * Date: 5/12/2015
  * Time: 1:25 PM
  */
-
+namespace App\Http\Controllers;
 class RatingController extends BaseController{
 
     public function getUserratings($rating, $email, $terminal_id , $action){

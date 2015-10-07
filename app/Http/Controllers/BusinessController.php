@@ -8,7 +8,7 @@
  * Date: 1/22/15
  * Time: 5:10 PM
  */
-
+namespace App\Http\Controllers;
 
 class BusinessController extends BaseController{
 

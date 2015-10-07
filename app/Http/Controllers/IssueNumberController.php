@@ -5,7 +5,7 @@
  * Date: 1/28/15
  * Time: 1:53 PM
  */
-
+namespace App\Http\Controllers;
 class IssueNumberController extends BaseController{
 
     public function getMultiple($service_id, $range, $terminal_id = 0, $number_start = null, $date = null){

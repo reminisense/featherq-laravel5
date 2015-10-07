@@ -5,7 +5,7 @@
  * Date: 2/25/2015
  * Time: 10:29 AM
  */
-
+namespace App\Http\Controllers;
 class RestController extends BaseController {
 
     /**
